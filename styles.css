@@ -1,0 +1,173 @@
+.text{
+    color:#626262;
+    max-width: 650px;
+    margin: auto;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.textCard{
+    color:#626262;
+    max-width: 650px;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.response_topical {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-width: 100px;   
+    background-color: #ffffff;
+}
+.response_topical_text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-width: 100px;   
+    background-color: #ffffff;
+}
+.respons_card {
+    border-style: solid;
+    border-radius: 20px;
+    font-size: large;
+    margin: 10px;
+    padding: 10px;
+    max-width: 380px;
+    min-height: 50px;
+}
+
+.photo1 {
+    background: url(https://sun9-6.userapi.com/impg/BG2zfe39zcek6JzaSlKi0GLZSb2cW3cCHEjN0w/Fryj9WpcmuA.jpg?size=1437x2160&quality=95&rotate=270&sign=db1a14259d84d5de59730d924817ddf4&type=album) center no-repeat;
+    width: 210px;
+    height: 140px;
+    background-size: cover;
+    margin-right: 10px;
+    border: 4px solid #000000;
+    border-radius: 10px;
+    padding: 3px 0px 0px 60px;
+}
+.mainText{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.titul {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space;
+    box-shadow: 0 0 15px rgb(155, 155, 205);
+    border: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.titul1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space;
+    box-shadow: 0 0 15px rgb(155, 155, 205);
+    border: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.photo_titul {
+    background: url(https://sun9-41.userapi.com/impg/Zy2iNXT8gTVCcvl_pgXTCI5Od3j7qAJae7FSUg/f83tqAfAJsU.jpg?size=2360x1640&quality=95&sign=3702740e1f27d76e03a176832ed68f92&type=album) center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    margin-right: 10px;
+    border: 4px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    animation: pulse 1.5s infinite;
+}
+.mainText{
+    margin-left: 100px;
+}
+.my-carousel{
+    padding: 80px;
+    
+}
+.my-carousel .carousel-item{
+    display: flex;
+    max-height: 500px;
+    
+} 
+.my-carousel .carousel-item img{
+    object-fit: cover;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    .titul, .titul1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .photo_titul, .mainText, .respons_card {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .my-carousel {
+      padding: 20px;
+    }
+  
+    .my-carousel .carousel-item img {
+      max-height: 250px; /* Уменьшение высоты изображений карусели для мобильных устройств */
+    }
+  
+    .text, .textCard {
+      max-width: 100%;
+      font-size: smaller; /* Уменьшение размера текста для мобильных устройств */
+    }
+  
+    .response_topical {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  /* Стили для планшетов */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .respons_card {
+      max-width: 50%;
+    }
+    
+    .my-carousel .carousel-item img {
+      max-height: 400px; /* Средняя высота изображений для планшетов */
+    }
+  }
+  
+  /* Стили для десктопов */
+  @media (min-width: 1025px) {
+    .respons_card {
+      max-width: 380px; /* Ограничение ширины карточек для десктопных экранов */
+    }
+    
+    .my-carousel .carousel-item img {
+      max-height: 500px; /* Высота изображений карусели для десктопов */
+    }
+  }
